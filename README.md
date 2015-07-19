@@ -1,1 +1,2 @@
 # simpleMavenGlassfishJaxrs
+modify readme
