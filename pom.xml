@@ -76,7 +76,32 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- FindBugs -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <effort>Max</effort>
+                    <xmlOutput>true</xmlOutput>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
+
+    <reporting>
+        <plugins>
+
+            <!-- FindBugs -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>findbugs-maven-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
+
+        </plugins>
+    </reporting>
 
 </project>
