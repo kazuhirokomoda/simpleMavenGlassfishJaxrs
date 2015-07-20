@@ -1,2 +1,3 @@
 # simpleMavenGlassfishJaxrs
-modify readme again
+
+copy artifact
