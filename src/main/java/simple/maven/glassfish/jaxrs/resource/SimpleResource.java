@@ -5,7 +5,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import simple.maven.glassfish.jaxrs.response.HelloMessage;
-
+import simple.maven.glassfish.jaxrs.response.PathParamResult;
 
 @Path("/simple")
 public class SimpleResource {
@@ -22,10 +22,13 @@ public class SimpleResource {
     
     
     @GET
-    @Path("/path_param/{op1}+{op2}/")
-    public String pathParamSample(@PathParam("op1") int op1, @PathParam("op2") int op2) {
+    @Path("/path_param_addition/{op1}_{op2}/")
+    public PathParamResult pathParamAddition(@PathParam("op1") int op1, @PathParam("op2") int op2) {
         int result = op1 + op2;
-        return Integer.toString(result);
+        PathParamResult pathParamResult = new PathParamResult();
+        pathParamResult.setResult(Integer.toString(result));
+
+        return pathParamResult;
     }
 
     
