@@ -8,6 +8,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import simple.maven.glassfish.jaxrs.response.HelloMessage;
+import simple.maven.glassfish.jaxrs.response.PathParamResult;
 
 
 public class SimpleResourceTest {
@@ -49,22 +50,24 @@ public class SimpleResourceTest {
     }
 
     /**
-     * Test of pathParamSample method, of class SimpleResource.
+     * Test of pathParamAddition method, of class SimpleResource.
      */
-    /*
+
     @Test
-    public void testPathParamSample() {
-        System.out.println("pathParamSample");
-        int op1 = 0;
-        int op2 = 0;
+    public void testPathParamAddition() {
+        System.out.println("pathParamAddition");
+
+        int op1 = 4;
+        int op2 = 7;
+
+        // result
         SimpleResource instance = new SimpleResource();
-        String expResult = "";
-        String result = instance.pathParamSample(op1, op2);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        PathParamResult result = instance.pathParamAddition(op1, op2);
+
+        // assert
+        assertEquals(Integer.toString(11), result.getResult());
+
     }
-    */
 
     /**
      * Test of pathParamSample2 method, of class SimpleResource.
