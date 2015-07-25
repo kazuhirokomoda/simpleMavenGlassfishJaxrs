@@ -26,49 +26,40 @@
             </div>
             
             <!-- helloMessage -->
-            <div ng-controller="HelloMessageController as helloMessageCtrl"> <!--   -->
+            <div ng-controller="HelloMessageController as helloMessageCtrl">
                 <h2>helloMessage</h2>
-                <form class="input-group input-group-lg" ng-submit="helloMessageCtrl.addMessage()">
+                <form class="input-group input-group-lg" ng-submit="helloMessageCtrl.showMessage()">
                     <input type="text" placeholder="Please input a message."
                         ng-model="helloMessageCtrl.inputMessage" class="form-control input-lg">
                     <span class="input-group-btn">
                         <button type="submit" class="btn btn-default">send</button>
                     </span>
                 </form>
-                <h3>{{helloMessageCtrl.helloMessageFromJAXRS.message}}</h3>
+                <h3>=> {{helloMessageCtrl.helloMessageFromJAXRS.message}}</h3>
                 
             </div>
         
             <hr>
-        
-            <!-- pathParamSample -->
-            <div> <!-- ng-controller -->
-                <h2>pathParamSample</h2>
-                <form class="input-group input-group-lg">
-                    <input type="text" placeholder="Please input a message."
-                        ng-app=""class="form-control input-lg">
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default">追加</button>
-                    </span>
-                    
+
+            <!-- pathParamAddition -->
+            <div ng-controller="PathParamAdditionController as pathParamAdditionCtrl">
+                <h2>pathParamAddition</h2>
+                <form class="form-inline" role="form" ng-submit="pathParamAdditionCtrl.addNumbers()">
+                    <div class="form-group">
+                        <input type="text" placeholder="first number" ng-model="pathParamAdditionCtrl.inputOp1" class="form-control">
+                    </div>
+                    +
+                    <div class="form-group">
+                        <input type="text" placeholder="second number" ng-model="pathParamAdditionCtrl.inputOp2" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-default">send</button>
                 </form>
-                +
-                <form class="input-group input-group-lg">
-                    <input type="text" placeholder="Please input a message."
-                        ng-app=""class="form-control input-lg">
-                    <span class="input-group-btn">
-                        <button type="submit" class="btn btn-default">追加</button>
-                    </span>
-                </form>
-                =
-                <h3>pathParamSample</h3>
+                <h3>=> {{pathParamAdditionCtrl.pathParamAdditionFromJAXRS.result}}</h3>
             </div>
-            
+
             <hr>
             
         </div>
-        
 
-        
     </body>
 </html>
