@@ -2,7 +2,7 @@
 package simple.maven.glassfish.jaxrs.response;
 
 public class PathParamResult {
-    
+
     private String result;
 
     /**
@@ -17,5 +17,5 @@ public class PathParamResult {
      */
     public void setResult(String result) {
         this.result = result;
-    }    
+    }
 }

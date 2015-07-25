@@ -1,9 +1,8 @@
 
 package simple.maven.glassfish.jaxrs.response;
 
-
 public class HelloMessage {
-    
+
     private String message;
 
     /**
@@ -19,5 +18,5 @@ public class HelloMessage {
     public void setMessage(String message) {
         this.message = message;
     }
-    
+
 }
