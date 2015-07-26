@@ -46,7 +46,8 @@ This is just a simple project, but I hope I learn something
 - Cobertura Plugin
 - Copy Artifact Plugin
 - Deploy Plugin (aka. Deploy to container Plugin) (for deploying to Glassfish)
-- PMD Plugin
+- PMD Plugin (incl. CPD)
+- DRY Plugin (aka. Duplicate Code Scanner Plug-in)
 
 ### pom.xml
 
