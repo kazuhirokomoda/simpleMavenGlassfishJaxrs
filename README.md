@@ -29,7 +29,7 @@ This is just a simple project, but I hope I learn something
 ## Environment
 
 - VCS: Git
--- hosting service: GitHub
+    - hosting service: GitHub
 - sample app: AngularJS, Java (JAX-RS)
 - dependency management: Maven
 - app server: Glassfish
@@ -46,7 +46,7 @@ This is just a simple project, but I hope I learn something
 - Cobertura Plugin
 - Copy Artifact Plugin
 - Deploy Plugin (aka. Deploy to container Plugin) (for deploying to Glassfish)
-
+- PMD Plugin
 
 ### pom.xml
 
