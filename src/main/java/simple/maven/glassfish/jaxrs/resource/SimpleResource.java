@@ -41,19 +41,16 @@ public class SimpleResource {
     }
 
     /**
-     * Adds two numbers.
-     * ex) http://localhost:8080/simpleMavenGlassfishJaxrs/webresources/simple/path_param_addition/4/7/
+     * Divide the first number by the second number.
      * @param op1
      * @param op2
      * @return pathParamResult
      */
     @GET
-    @Path("/path_param_addition/{op1}/{op2}/")
-    public PathParamResult pathParamAddition2(@PathParam("op1") int op1, @PathParam("op2") int op2) {
-        int result = op1 + op2;
-        PathParamResult pathParamResult = new PathParamResult();
-        pathParamResult.setResult(Integer.toString(result));
-        return pathParamResult;
+    @Path("/path_param/{op1}/{op2}/")
+    public String pathParamSample2(@PathParam("op1") int op1, @PathParam("op2") int op2) {
+        int result = op1 / op2;
+        return Integer.toString(result);
     }
 
 }
