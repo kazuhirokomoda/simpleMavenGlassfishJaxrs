@@ -47,9 +47,9 @@ public class SimpleResource {
      * @return pathParamResult
      */
     @GET
-    @Path("/path_param_addition/{op1}/{op2}/")
-    public PathParamResult pathParamAddition2(@PathParam("op1") int op1, @PathParam("op2") int op2) {
-        int result = op1 + op2;
+    @Path("/path_param_division/{op1}/{op2}/")
+    public PathParamResult pathParamDivision(@PathParam("op1") int op1, @PathParam("op2") int op2) {
+        int result = op1 / op2;
         PathParamResult pathParamResult = new PathParamResult();
         pathParamResult.setResult(Integer.toString(result));
         return pathParamResult;
