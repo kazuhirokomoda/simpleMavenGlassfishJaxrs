@@ -1,8 +1,13 @@
 
 package simple.maven.glassfish.jaxrs.response;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "hello message")
 public class HelloMessage {
 
+    @ApiModelProperty(value = "message", required=true)
     private String message;
 
     /**
