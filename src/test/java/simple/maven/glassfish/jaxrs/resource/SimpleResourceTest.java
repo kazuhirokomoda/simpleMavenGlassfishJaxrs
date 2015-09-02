@@ -70,21 +70,22 @@ public class SimpleResourceTest {
     }
 
     /**
-     * Test of pathParamSample2 method, of class SimpleResource.
+     * Test of pathParamDivision method, of class SimpleResource.
      */
-    /*
+
     @Test
-    public void testPathParamSample2() {
-        System.out.println("pathParamSample2");
-        int op1 = 0;
-        int op2 = 0;
+    public void testPathParamDivision() {
+        System.out.println("pathParamDivision");
+        int op1 = 11;
+        int op2 = 2;
+
+        // result
         SimpleResource instance = new SimpleResource();
-        String expResult = "";
-        String result = instance.pathParamSample2(op1, op2);
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        PathParamResult result = instance.pathParamDivision(op1, op2);
+
+        // assert
+        assertEquals(5.5, result.getResult());
+
     }
-    */
-    
+
 }
