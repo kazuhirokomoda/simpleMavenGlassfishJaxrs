@@ -60,10 +60,10 @@ public class SimpleResource {
     @ApiOperation(value = "Path Param Division API",
             notes = "Divide the first number by the second number.",
             response = PathParamResult.class)
-    public PathParamResult pathParamDivision(@PathParam("op1") int op1, @PathParam("op2") int op2) {
-        int result = op1 / op2;
+    public PathParamResult pathParamDivision(@PathParam("op1") double op1, @PathParam("op2") double op2) {
+        double result = op1 / op2;
         PathParamResult pathParamResult = new PathParamResult();
-        pathParamResult.setResult(Integer.toString(result));
+        pathParamResult.setResult(Double.toString(result));
         return pathParamResult;
     }
 

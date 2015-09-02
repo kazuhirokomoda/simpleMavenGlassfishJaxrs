@@ -84,7 +84,7 @@ public class SimpleResourceTest {
         PathParamResult result = instance.pathParamDivision(op1, op2);
 
         // assert
-        assertEquals(5.5, result.getResult());
+        assertEquals(Double.toString(5.5), result.getResult());
 
     }
 
